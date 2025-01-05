@@ -70,7 +70,7 @@ namespace MyProject.PupilNew
                     // Parse gaze_X, gaze_Y, and fixationTime
                     if (float.TryParse(values[0], out float gazeX) &&
                         float.TryParse(values[1], out float gazeY) &&
-                        float.TryParse(values[2], out float fixationTime))
+                        float.TryParse(values[4], out float fixationTime))
                     {
                         // Store gaze data as (X, Y, fixationTime)
                         gazeData.Add(new Vector3(gazeX, gazeY, fixationTime / 1000f)); // Convert ms to seconds
