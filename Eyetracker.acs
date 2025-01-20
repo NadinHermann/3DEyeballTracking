@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" modelName="C:\Christoph\Studium_JKU\Master\WS2024\AssistiveTech\Eyetracker.acs_2025_1_7_17_54" version="20130320">
+  <components>
+    <component id="EyeX.1" type_id="asterics.EyeX">
+      <description>interfaces to the EyeX Gaze tracking system</description>
+      <ports>
+        <inputPort portTypeID="xOffset">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="yOffset">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="gazeX">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="gazeY">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="posX">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="posY">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="fixationTime">
+          <properties />
+        </outputPort>
+        <outputPort portTypeID="closeTime">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="enabled" value="true" />
+        <property name="averaging" value="4" />
+        <property name="minBlinkTime" value="50" />
+        <property name="midBlinkTime" value="200" />
+        <property name="maxBlinkTime" value="2000" />
+        <property name="fixationTime" value="700" />
+        <property name="pupilPositionMode" value="0" />
+        <property name="offsetCorrectionRadius" value="150" />
+        <property name="offsetCorrectionMode" value="1" />
+      </properties>
+      <layout>
+        <posX>160</posX>
+        <posY>371</posY>
+      </layout>
+    </component>
+    <component id="StringExpander.1" type_id="asterics.StringExpander">
+      <description>Adds the preString and postString strings to the incoming string and sends the new string to the output port.</description>
+      <ports>
+        <inputPort portTypeID="input">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="preString">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="postString">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="preString" value="" />
+        <property name="postString" value=";" />
+        <property name="trim" value="false" />
+      </properties>
+      <layout>
+        <posX>360</posX>
+        <posY>123</posY>
+      </layout>
+    </component>
+    <component id="WriteCSV.1" type_id="asterics.WriteCSV">
+      <description>Write a csv file</description>
+      <ports>
+        <inputPort portTypeID="Input">
+          <properties />
+        </inputPort>
+      </ports>
+      <properties>
+        <property name="FileName" value="Data-without-close" />
+        <property name="FilePath" value="C:\Christoph\Studium_JKU\Master\WS2024\AssistiveTech" />
+      </properties>
+      <layout>
+        <posX>1184</posX>
+        <posY>388</posY>
+      </layout>
+    </component>
+    <component id="StringExpander.2" type_id="asterics.StringExpander">
+      <description>Adds the preString and postString strings to the incoming string and sends the new string to the output port.</description>
+      <ports>
+        <inputPort portTypeID="input">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="preString">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="postString">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="preString" value="" />
+        <property name="postString" value=";" />
+        <property name="trim" value="false" />
+      </properties>
+      <layout>
+        <posX>497</posX>
+        <posY>172</posY>
+      </layout>
+    </component>
+    <component id="StringExpander.3" type_id="asterics.StringExpander">
+      <description>Adds the preString and postString strings to the incoming string and sends the new string to the output port.</description>
+      <ports>
+        <inputPort portTypeID="input">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="preString">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="postString">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="preString" value="" />
+        <property name="postString" value=";" />
+        <property name="trim" value="false" />
+      </properties>
+      <layout>
+        <posX>641</posX>
+        <posY>217</posY>
+      </layout>
+    </component>
+    <component id="StringExpander.4" type_id="asterics.StringExpander">
+      <description>Adds the preString and postString strings to the incoming string and sends the new string to the output port.</description>
+      <ports>
+        <inputPort portTypeID="input">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="preString">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="postString">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="preString" value="" />
+        <property name="postString" value=";" />
+        <property name="trim" value="false" />
+      </properties>
+      <layout>
+        <posX>793</posX>
+        <posY>306</posY>
+      </layout>
+    </component>
+    <component id="StringExpander.5" type_id="asterics.StringExpander">
+      <description>Adds the preString and postString strings to the incoming string and sends the new string to the output port.</description>
+      <ports>
+        <inputPort portTypeID="input">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="preString">
+          <properties />
+        </inputPort>
+        <inputPort portTypeID="postString">
+          <properties />
+        </inputPort>
+        <outputPort portTypeID="output">
+          <properties />
+        </outputPort>
+      </ports>
+      <properties>
+        <property name="preString" value="" />
+        <property name="postString" value=";" />
+        <property name="trim" value="false" />
+      </properties>
+      <layout>
+        <posX>934</posX>
+        <posY>383</posY>
+      </layout>
+    </component>
+  </components>
+  <channels>
+    <channel id="binding.0">
+      <source>
+        <component id="EyeX.1" />
+        <port id="gazeX" />
+      </source>
+      <target>
+        <component id="StringExpander.1" />
+        <port id="input" />
+      </target>
+    </channel>
+    <channel id="binding.1">
+      <source>
+        <component id="StringExpander.1" />
+        <port id="output" />
+      </source>
+      <target>
+        <component id="StringExpander.2" />
+        <port id="preString" />
+      </target>
+    </channel>
+    <channel id="binding.2">
+      <source>
+        <component id="EyeX.1" />
+        <port id="gazeY" />
+      </source>
+      <target>
+        <component id="StringExpander.2" />
+        <port id="input" />
+      </target>
+    </channel>
+    <channel id="binding.6">
+      <source>
+        <component id="EyeX.1" />
+        <port id="posY" />
+      </source>
+      <target>
+        <component id="StringExpander.4" />
+        <port id="input" />
+      </target>
+    </channel>
+    <channel id="binding.4">
+      <source>
+        <component id="EyeX.1" />
+        <port id="posX" />
+      </source>
+      <target>
+        <component id="StringExpander.3" />
+        <port id="input" />
+      </target>
+    </channel>
+    <channel id="binding.5">
+      <source>
+        <component id="StringExpander.2" />
+        <port id="output" />
+      </source>
+      <target>
+        <component id="StringExpander.3" />
+        <port id="preString" />
+      </target>
+    </channel>
+    <channel id="binding.7">
+      <source>
+        <component id="StringExpander.3" />
+        <port id="output" />
+      </source>
+      <target>
+        <component id="StringExpander.4" />
+        <port id="preString" />
+      </target>
+    </channel>
+    <channel id="binding.8">
+      <source>
+        <component id="EyeX.1" />
+        <port id="fixationTime" />
+      </source>
+      <target>
+        <component id="StringExpander.5" />
+        <port id="input" />
+      </target>
+    </channel>
+    <channel id="binding.9">
+      <source>
+        <component id="StringExpander.4" />
+        <port id="output" />
+      </source>
+      <target>
+        <component id="StringExpander.5" />
+        <port id="preString" />
+      </target>
+    </channel>
+    <channel id="binding.10">
+      <source>
+        <component id="StringExpander.5" />
+        <port id="output" />
+      </source>
+      <target>
+        <component id="WriteCSV.1" />
+        <port id="Input" />
+      </target>
+    </channel>
+  </channels>
+  <groups />
+  <modelGUI>
+    <Decoration>true</Decoration>
+    <Fullscreen>false</Fullscreen>
+    <AlwaysOnTop>false</AlwaysOnTop>
+    <ToSystemTray>false</ToSystemTray>
+    <ShopControlPanel>true</ShopControlPanel>
+    <AREGUIWindow>
+      <posX>-35</posX>
+      <posY>67</posY>
+      <width>9000</width>
+      <height>5000</height>
+    </AREGUIWindow>
+  </modelGUI>
+</model>
